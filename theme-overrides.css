@@ -1,0 +1,79 @@
+/* theme-overrides.css
+   Overrides to change blue -> purple / black theme.
+   Φορτώνεται μετά από output.css και χρησιμοποιεί !important
+   για να εξασφαλίσει override των generated Tailwind classes.
+*/
+
+/* Backgrounds */
+.bg-blue-300 { background-color: #060008 !important; } /* near black */
+.bg-blue-400\/70 { background-color: rgba(10,6,20,0.7) !important; }
+.bg-blue-500 { background-color: #5B21B6 !important; } /* purple-700 */
+.bg-blue-600 { background-color: #4C1D95 !important; }
+.bg-sky-950\/70 { background-color: rgba(8,8,15,0.85) !important; }
+
+/* Text colors */
+.text-blue-500 { color: #A78BFA !important; } /* light purple */
+.text-blue-300 { color: #C4B5FD !important; }
+.text-blue-600 { color: #7C3AED !important; }
+.text-blue-100 { color: #ede9fe !important; }
+
+/* Borders */
+.border-blue-300 { border-color: #6D28D9 !important; }
+.border-blue-600 { border-color: #5B21B6 !important; }
+
+/* Hover colors */
+.hover\:bg-blue-100:hover { background-color: rgba(99, 102, 241, 0.08) !important; }
+
+/* Specific class replacements used in HTML */
+.bg-sky-950\/70 { background-color: rgba(8, 8, 15, 0.85) !important; }
+.bg-white { background-color: #0b0712 !important; } /* make white areas dark but keep contrast */
+.bg-white\/20 { background-color: rgba(11,7,18,0.2) !important; }
+.bg-white\/10 { background-color: rgba(11,7,18,0.1) !important; }
+.bg-black\/10 { background-color: rgba(0,0,0,0.10) !important; }
+
+/* Code-style colors */
+.text-keywords { color: #C4B5FD !important; } /* purple tint */
+.text-strings { color: #C4B5FD !important; }
+.text-methods { color: #FDE68A !important; }
+.text-properties { color: #FFFFFF !important; }
+.text-punctuations { color: #9CA3AF !important; }
+
+/* Make the stroked text (the huge hero text) purple-stroked instead of white */
+.text-strok {
+  -webkit-text-stroke: 1px #9b7bff !important;
+  -webkit-text-fill-color: transparent !important;
+}
+
+/* Gradient overlayer recolor (if used) */
+.gradient-overlayer {
+  background: linear-gradient(180deg, rgba(107,33,168,0.55) 30%, rgba(10,6,20,0.0) 140%) !important;
+}
+
+/* Flicker screen more subtle on dark theme */
+.flicker-screen {
+  background: rgba(107,33,168,0.02) !important;
+}
+
+/* Optional: adjust nav bg */
+nav > div { background: rgba(4,4,8,0.65) !important; }
+
+/* Buttons & interactive */
+.hover\:bg-blue-100:hover { background-color: rgba(99, 102, 241, 0.08) !important; }
+.focus\:ring-blue-200:focus { --tw-ring-color: rgba(167,139,250,0.6) !important; }
+
+/* Misc small fixes for contrast */
+.bg-sky-700 { background-color: rgba(75, 0, 130, 0.25) !important; }
+.bg-orange-500 { background-color: rgba(111,66,193,0.15) !important; }
+.bg-yellow-400 { background-color: rgba(140, 82, 255, 0.12) !important; }
+
+/* Ensure forms match theme */
+input, textarea, select {
+  background-color: rgba(10,6,20,0.6) !important;
+  border-color: #5B21B6 !important;
+  color: #f3f2ff !important;
+}
+
+/* Projects card overrides */
+.bg-black\/10 { background-color: rgba(10,6,20,0.12) !important; }
+
+/* Any leftover .text-white kept as-is for legibility */

@@ -21,3 +21,4 @@ window.addEventListener("scroll", () => {
     movingElement.style.bottom = `${scrollPosition - 90}px`;
   }
 });
+

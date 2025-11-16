@@ -2537,87 +2537,75 @@ nav {
   transition: all 50ms ease-in-out;
 }
 
-#text-1, #text-10 {
+#text-1, #text-8 {
   animation-name: textCycle-1;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-#text-3, #text-8 {
+#text-3, #text-6 {
   animation-name: textCycle-2;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-#text-5, #text-6 {
+#text-4, #text-5 {
   animation-name: textCycle-3;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-#text-7, #text-4 {
+#text-2, #text-7 {
   animation-name: textCycle-4;
   animation-duration: 10s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
 }
 
-#text-9, #text-2 {
-  animation-name: textCycle-5;
-  animation-duration: 10s;
-  animation-iteration-count: infinite;
-  animation-timing-function: linear;
-}
+/* Keyframes keep the many-step 10% stops like original for the same smooth feel.
+   Each cycle uses two adjacent 10% blocks (~20% active) and small transparent ranges,
+   with cycle-1 using the wrap (0-10% and 90-100%) just like the original pattern. */
 
 @keyframes textCycle-1 {
   0%, 10% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   10%, 20% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   20%, 30% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   30%, 40% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   40%, 50% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   50%, 60% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   60%, 70% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   70%, 80% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   80%, 90% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   90%, 100% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
@@ -2629,47 +2617,38 @@ nav {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   10%, 20% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   20%, 30% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;
+    -webkit-text-fill-color: white;
+    text-shadow: #FFF 0px 0px 5px;
   }
-
   30%, 40% {
     -webkit-text-fill-color: transparent;
-    text-shadow: none;
+    text-shadow: rgba(255,255,255,0.25) 0px 0px 5px;
   }
-
   40%, 50% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   50%, 60% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   60%, 70% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   70%, 80% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   80%, 90% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   90%, 100% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
@@ -2681,47 +2660,38 @@ nav {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   10%, 20% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   20%, 30% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   30%, 40% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;
+    -webkit-text-fill-color: white;
+    text-shadow: #FFF 0px 0px 5px;
   }
-
   40%, 50% {
     -webkit-text-fill-color: transparent;
-    text-shadow: none;
+    text-shadow: rgba(255,255,255,0.25) 0px 0px 5px;
   }
-
   50%, 60% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   60%, 70% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   70%, 80% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   80%, 90% {
     -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;
+    text-shadow: rgba(255,255,255,0.25) 0px 0px 5px;
   }
-
   90%, 100% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
@@ -2733,99 +2703,38 @@ nav {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   10%, 20% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   20%, 30% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
-  30%, 40% {
-    -webkit-text-fill-color: white;
-    text-shadow: #FFF 0px 0px 5px;
-  }
-
-  40%, 50% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;
-  }
-
-  50%, 60% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-
-  60%, 70% {
-    -webkit-text-fill-color: white;
-    text-shadow: #FFF 0px 0px 5px;
-  }
-
-  70%, 80% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: rgba(255, 255, 255, .25) 0px 0px 5px;
-  }
-
-  80%, 90% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-
-  90%, 100% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-}
-
-@keyframes textCycle-5 {
-  0%, 10% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-
-  10%, 20% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-
-  20%, 30% {
-    -webkit-text-fill-color: transparent;
-    text-shadow: none;
-  }
-
   30%, 40% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   40%, 50% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   50%, 60% {
     -webkit-text-fill-color: white;
     text-shadow: #FFF 0px 0px 5px;
   }
-
   60%, 70% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   70%, 80% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   80%, 90% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
   }
-
   90%, 100% {
     -webkit-text-fill-color: transparent;
     text-shadow: none;
